@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.movierating.entity.MovieEntity;
 
 @Repository
-public interface MovieRepository extends JpaRepository<MovieEntity, Integer>{
+public interface MovieRepository extends JpaRepository<MovieEntity, String>{
 
 }

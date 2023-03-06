@@ -1,6 +1,7 @@
 package com.movierating.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.movierating.entity.MovieEntity;
 import com.movierating.exception.MovieAlreadyExistsException;
@@ -14,6 +15,6 @@ public interface MovieService {
 	List<MovieEntity> findall();
 	List<String> find(String movieName) throws MovieNotExistsException; //Return string output
 	List<MovieEntity> findByName(String movieName) throws MovieNotExistsException;// Returns Entity as output
-	String deleteById(int movieId) throws MovieNotExistsException;
+	String deleteById(String movieName) throws MovieNotExistsException;
 	String deleteAll();
 }
